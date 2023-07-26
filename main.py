@@ -42,3 +42,12 @@ curl --location --request PUT 'http://127.0.0.1:8000/items/12345' \
   "is_offer": true
 }'
 """
+
+# Run using 
+# uvicorn main:app --reload
+
+# Or To run using command, python main.py. The below code is needed
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
+
